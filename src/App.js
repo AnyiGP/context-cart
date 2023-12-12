@@ -18,7 +18,7 @@ const filterProducts = (products) => {
         filters.category === "all" || 
         product.category === filters.category
       )
-    )
+    ) //devuelve true para los productos que pasen las condiciones
   }) 
 }
 

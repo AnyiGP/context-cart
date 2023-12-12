@@ -7,7 +7,7 @@ export const Filters = () => {
     // ojo, 
     const [minPrice, setMinPrice] = useState()
 
-    const handreMinPrice = e => {
+    const handleMinPrice = e => {
         setMinPrice(e.target.value)
         setFilters(prevState => ({...prevState, minPrice: e.target.value}))
         //setMinPrice()
@@ -26,7 +26,7 @@ export const Filters = () => {
                     id='price'
                     min={0}
                     max={700} 
-                    onChange={e => handreMinPrice(e)}
+                    onChange={e => handleMinPrice(e)}
                     />
                     <span>{minPrice}</span>
             </div>
