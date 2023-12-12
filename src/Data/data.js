@@ -1,142 +1,34 @@
 export const products = [
-    {
-      id: 1,
-      name: "Shampoo",
-      price: 5.99,
-      category: "Limpieza",
-      description: "Shampoo para el cabello"
-    },
-    {
-      id: 2,
-      name: "Detergente",
-      price: 3.49,
-      category: "Limpieza",
-      description: "Detergente para la ropa"
-    },
-    {
-      id: 3,
-      name: "Cepillo de dientes",
-      price: 1.99,
-      category: "Hogar",
-      description: "Cepillo de dientes de cerdas suaves"
-    },
-    {
-      id: 4,
-      name: "Toallas de papel",
-      price: 2.99,
-      category: "Hogar",
-      description: "Toallas de papel absorbentes"
-    },
-    {
-      id: 5,
-      name: "Licuadora",
-      price: 39.99,
-      category: "Electrodomésticos",
-      description: "Licuadora de alta potencia"
-    },
-    {
-      id: 6,
-      name: "Papel higiénico",
-      price: 4.99,
-      category: "Hogar",
-      description: "Papel higiénico suave y resistente"
-    },
-    {
-      id: 7,
-      name: "Jabón de manos",
-      price: 1.49,
-      category: "Limpieza",
-      description: "Jabón de manos con aroma refrescante"
-    },
-    {
-      id: 8,
-      name: "Cafetera",
-      price: 29.99,
-      category: "Electrodomésticos",
-      description: "Cafetera programable de acero inoxidable"
-    },
-    {
-      id: 9,
-      name: "Cepillo para el cabello",
-      price: 3.99,
-      category: "Hogar",
-      description: "Cepillo para desenredar el cabello"
-    },
-    {
-      id: 10,
-      name: "Desinfectante",
-      price: 2.99,
-      category: "Limpieza",
-      description: "Desinfectante multiusos"
-    },
-    {
-      id: 11,
-      name: "Aspiradora",
-      price: 79.99,
-      category: "Electrodomésticos",
-      description: "Aspiradora con filtro HEPA"
-    },
-    {
-      id: 12,
-      name: "Esponja",
-      price: 0.99,
-      category: "Hogar",
-      description: "Esponja para lavar platos"
-    },
-    {
-      id: 13,
-      name: "Cereal",
-      price: 3.99,
-      category: "Hogar",
-      description: "Cereal integral con frutas"
-    },
-    {
-      id: 14,
-      name: "Pasta de dientes",
-      price: 2.49,
-      category: "Hogar",
-      description: "Pasta de dientes con flúor"
-    },
-    {
-      id: 15,
-      name: "Lavavajillas",
-      price: 4.99,
-      category: "Limpieza",
-      description: "Lavavajillas líquido concentrado"
-    },
-    {
-      id: 16,
-      name: "Refrigerador",
-      price: 599.99,
-      category: "Electrodomésticos",
-      description: "Refrigerador de gran capacidad"
-    },
-    {
-      id: 17,
-      name: "Leche",
-      price: 1.99,
-      category: "Hogar",
-      description: "Leche descremada"
-    },
-    {
-      id: 18,
-      name: "Desodorante",
-      price: 2.99,
-      category: "Hogar",
-      description: "Desodorante en aerosol"
-    },
-    {
-      id: 19,
-      name: "Limpiador de ventanas",
-      price: 3.99,
-      category: "Limpieza",
-      description: "Limpiador de ventanas sin rayas"
-    },
-    {
-      id: 20,
-      name: "Tostadora",
-      price: 19.99,
-      category: "Electrodomésticos",
-      description: "Tostadora de pan"
-    }
-  ]
+    { id: 1, name: "Sika 1", description: "Hidrófugo químico inorgánico", category: "Complemeno para obras Húmedas", price: 45 },
+    { id: 2, name: "RAP 920", description: "Membrana líquida impermeabilizante para techos", category: "Cubiertas y aislaciones", price: 67 },
+    { id: 3, name: "RAP 720", description: "Sellador elástico acrílico impermeable para grietas", category: "Complemeno para obras Húmedas", price: 23 },
+    { id: 4, name: "SIKALASTIC 560", description: "Membrana líquida impermeabilizante con poliuretano", category: "Complemeno para obras Húmedas", price: 55 },
+    { id: 5, name: "INERTOLTECH", description: "Emulsión asfáltica multiuso", category: "Complemeno para obras Húmedas", price: 78 },
+    { id: 6, name: "SIKA TEX", description: "Malla para reforzar membrana líquida", category: "Complemeno para obras Húmedas", price: 34 },
+    { id: 7, name: "CHAPA", description: "Acanalada C-25", category: "Complemeno para obras Húmedas", price: 89 },
+    { id: 8, name: "CHAPA TRASLÚCIDA", description: "Acanalada", category: "Cubiertas y aislaciones", price: 12 },
+    { id: 9, name: "ROLAC PLATA", description: "Aislante de lana de vidrio", category: "Cubiertas y aislaciones", price: 56 },
+    { id: 10, name: "ROLAC PLATA", description: "Aislante de lana de vidrio", category: "Cubiertas y aislaciones", price: 34 },
+    { id: 11, name: "EPS ACANALDO", description: "Aislante de telgopor para chapa acanalada", category: "Cubiertas y aislaciones", price: 78 },
+    { id: 12, name: "RED DE SOSTÉN", description: "Malla de sujeción para aislaciones de cubierta", category: "Complemeno para obras Húmedas", price: 45 },
+    { id: 13, name: "LADRILLO EPS", description: "Ladrillo de telgopor para losas", category: "Complemeno para obras Húmedas", price: 67 },
+    { id: 14, name: "THERMOESPUMA", description: "Aislante térmico e hidrófugo de espuma de polietileno", category: "Complemeno para obras Húmedas", price: 23 },
+    { id: 15, name: "TAPUME", description: "Tablero OSB multiuso", category: "Obras en general", price: 55 },
+    { id: 16, name: "ECOFORM", description: "Tablero OSB multiuso para molde o formas de concreto", category: "Obras en general", price: 78 },
+    { id: 17, name: "CAÑO ESTRUCTURAL", description: "Circular, cuadrado y rectangular", category: "Obras en general", price: 34 },
+    { id: 18, name: "CORREAS", description: "Distintas medidas", category: "Obras en general", price: 89 },
+    { id: 19, name: "ANCLAJES QUÍMICOS", description: "Distintas medidas", category: "Obras en general", price: 12 },
+    { id: 20, name: "SIKA CERAM IMPERMEABLE", description: "Adhesivo cementício impermeable", category: "Pegamentos", price: 56 },
+    { id: 21, name: "SIKA CERAM PORCELANATO", description: "Para pisos y revestimientos de baja absorción.", category: "Pegamentos", price: 34 },
+    { id: 22, name: "SIKA CERAM FLEXIBLE", description: "Adhesivo cementício ﬂexible, para pisos cerámicos y revestimientos.", category: "Pegamentos", price: 78 },
+    { id: 23, name: "SIKA BINDA FIX", description: "Mezcla adhesiva cementícia impermeable, se utiliza para la colocación de cerámicos y revestimientos en pisos y paredes.", category: "Pegamentos", price: 45 },
+    { id: 24, name: "ITALFLEX", description: "Revestimiento acrílico texturable de base acuosa", category: "Pinturas y complementos", price: 67 },
+    { id: 25, name: "FONDOFLEX", description: "Fondo para la aplicación de revestimientos acrílicos texturados", category: "Pinturas y complementos", price: 23 },
+    { id: 26, name: "PRADERA LÁTEX INTERIOR", description: "Acrílico de base acuosa, para proteger y decorar paredes interiores", category: "Pinturas y complementos", price: 55 },
+    { id: 27, name: "BASECOAT", description: "Producto cementicio modiﬁcado para nivelar superﬁcies", category: "Pinturas y complementos", price: 78 },
+    { id: 28, name: "MALLA FIBRA DE VIDRIO", description: "Para revestimiento de pared antihumedad, sistema de aislamiento térmico, revoque grueso y ﬁno, pisos y micropisos, juntas e impermeabilizaciones.", category: "Pinturas y complementos", price: 34 },
+    { id: 29, name: "Pisos", description: "", category: "Pisos", price: 89 },
+  ];
+  
+  console.log(products);
+  
