@@ -25,7 +25,7 @@ export const Filters = () => {
                     name=''
                     id='price'
                     min={0}
-                    max={700} 
+                    max={70} 
                     onChange={e => handleMinPrice(e)}
                     />
                     <span>{minPrice}</span>
