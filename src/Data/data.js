@@ -7,7 +7,7 @@ export const products = [
     description: "Hidrófugo químico inorgánico",
     category: "Complemeno para obras Húmedas",
     price: 45,
-    img: imgs.ALASKA,
+    img: imgs.SIKATEX,
   },
   {
     id: 2,
@@ -15,6 +15,7 @@ export const products = [
     description: "Membrana líquida impermeabilizante para techos",
     category: "Cubiertas y aislaciones",
     price: 67,
+    img: imgs.RAP720,
   },
   {
     id: 3,
@@ -22,7 +23,7 @@ export const products = [
     description: "Sellador elástico acrílico impermeable para grietas",
     category: "Complemeno para obras Húmedas",
     price: 23,
-
+    img: imgs.RAP720,
   },
   {
     id: 4,
@@ -30,6 +31,7 @@ export const products = [
     description: "Membrana líquida impermeabilizante con poliuretano",
     category: "Complemeno para obras Húmedas",
     price: 55,
+    img: imgs.SIKALASTIC560,
   },
   {
     id: 5,
@@ -37,6 +39,7 @@ export const products = [
     description: "Emulsión asfáltica multiuso",
     category: "Complemeno para obras Húmedas",
     price: 78,
+    img: imgs.INERTOLTECH,
   },
   {
     id: 6,
@@ -44,6 +47,7 @@ export const products = [
     description: "Malla para reforzar membrana líquida",
     category: "Complemeno para obras Húmedas",
     price: 34,
+    img: imgs.SIKATEX,
   },
   {
     id: 7,
@@ -51,6 +55,7 @@ export const products = [
     description: "Acanalada C-25",
     category: "Complemeno para obras Húmedas",
     price: 89,
+    img: imgs.CHAPA,
   },
   {
     id: 8,
@@ -58,6 +63,7 @@ export const products = [
     description: "Acanalada",
     category: "Cubiertas y aislaciones",
     price: 12,
+    img: imgs.CHAPATRASLÚCIDA,
   },
   {
     id: 9,
@@ -65,6 +71,7 @@ export const products = [
     description: "Aislante de lana de vidrio",
     category: "Cubiertas y aislaciones",
     price: 56,
+    img: imgs.ROLACPLATA,
   },
   {
     id: 10,
@@ -72,6 +79,7 @@ export const products = [
     description: "Aislante de lana de vidrio",
     category: "Cubiertas y aislaciones",
     price: 34,
+    img: imgs.ROLACPLATA,
   },
   {
     id: 11,
@@ -79,6 +87,7 @@ export const products = [
     description: "Aislante de telgopor para chapa acanalada",
     category: "Cubiertas y aislaciones",
     price: 78,
+    img: imgs.EPSACANALDO,
   },
   {
     id: 12,
@@ -86,6 +95,7 @@ export const products = [
     description: "Malla de sujeción para aislaciones de cubierta",
     category: "Complemeno para obras Húmedas",
     price: 45,
+    img: imgs.REDDESOSTÉN,
   },
   {
     id: 13,
@@ -93,6 +103,7 @@ export const products = [
     description: "Ladrillo de telgopor para losas",
     category: "Complemeno para obras Húmedas",
     price: 67,
+    img: imgs.LADRILLOEPS,
   },
   {
     id: 14,
@@ -100,6 +111,7 @@ export const products = [
     description: "Aislante térmico e hidrófugo de espuma de polietileno",
     category: "Complemeno para obras Húmedas",
     price: 23,
+    img: imgs.THERMOESPUMA,
   },
   {
     id: 15,
@@ -107,6 +119,7 @@ export const products = [
     description: "Tablero OSB multiuso",
     category: "Obras en general",
     price: 55,
+    img: imgs.TAPUME,
   },
   {
     id: 16,
@@ -114,6 +127,7 @@ export const products = [
     description: "Tablero OSB multiuso para molde o formas de concreto",
     category: "Obras en general",
     price: 78,
+    img: imgs.ECOFORM,
   },
   {
     id: 17,
@@ -121,6 +135,7 @@ export const products = [
     description: "Circular, cuadrado y rectangular",
     category: "Obras en general",
     price: 34,
+    img: imgs.CAÑOESTRUCTURAL,
   },
   {
     id: 18,
@@ -128,6 +143,7 @@ export const products = [
     description: "Distintas medidas",
     category: "Obras en general",
     price: 89,
+    img: imgs.CORREAS,
   },
   {
     id: 19,
@@ -135,6 +151,7 @@ export const products = [
     description: "Distintas medidas",
     category: "Obras en general",
     price: 12,
+    img: imgs.ANCLAJESQUÍMICOS,
   },
   {
     id: 20,
@@ -142,6 +159,7 @@ export const products = [
     description: "Adhesivo cementício impermeable",
     category: "Pegamentos",
     price: 56,
+    img: imgs.SIKACERAMIMPERMEABLE,
   },
   {
     id: 21,
@@ -149,6 +167,7 @@ export const products = [
     description: "Para pisos y revestimientos de baja absorción.",
     category: "Pegamentos",
     price: 34,
+    img: imgs.SIKACERAMPORCELANATO,
   },
   {
     id: 22,
@@ -157,6 +176,7 @@ export const products = [
       "Adhesivo cementício ﬂexible, para pisos cerámicos y revestimientos.",
     category: "Pegamentos",
     price: 78,
+    img: imgs.SIKACERAMFLEXIBLE,
   },
   {
     id: 23,
@@ -165,6 +185,7 @@ export const products = [
       "Mezcla adhesiva cementícia impermeable, se utiliza para la colocación de cerámicos y revestimientos en pisos y paredes.",
     category: "Pegamentos",
     price: 45,
+    img: imgs.SIKABINDAFIX,
   },
   {
     id: 24,
@@ -172,6 +193,7 @@ export const products = [
     description: "Revestimiento acrílico texturable de base acuosa",
     category: "Pinturas y complementos",
     price: 67,
+    img: imgs.ITALFLEX,
   },
   {
     id: 25,
@@ -180,6 +202,7 @@ export const products = [
       "Fondo para la aplicación de revestimientos acrílicos texturados",
     category: "Pinturas y complementos",
     price: 23,
+    img: imgs.FONDOFLEX,
   },
   {
     id: 26,
@@ -188,6 +211,7 @@ export const products = [
       "Acrílico de base acuosa, para proteger y decorar paredes interiores",
     category: "Pinturas y complementos",
     price: 55,
+    img: imgs.PRADERALÁTEXINTERIOR,
   },
   {
     id: 27,
@@ -195,6 +219,7 @@ export const products = [
     description: "Producto cementicio modiﬁcado para nivelar superﬁcies",
     category: "Pinturas y complementos",
     price: 78,
+    img: imgs.BASECOAT,
   },
   {
     id: 28,
@@ -203,8 +228,8 @@ export const products = [
       "Para revestimiento de pared antihumedad, sistema de aislamiento térmico, revoque grueso y ﬁno, pisos y micropisos, juntas e impermeabilizaciones.",
     category: "Pinturas y complementos",
     price: 34,
+    img: imgs.MALLAFIBRADEVIDRIO,
   },
-  { id: 29, name: "Pisos", description: "", category: "Pisos", price: 89 },
 ];
 
 console.log(products);
