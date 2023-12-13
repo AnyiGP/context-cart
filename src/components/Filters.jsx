@@ -17,6 +17,8 @@ export const Filters = () => {
         setFilters(prevState => ({...prevState, category: e.target.value}))
     }
 
+    //filtrar categorias disponibles e imrpimirlas en un select
+
     return (
         <>
             <div>

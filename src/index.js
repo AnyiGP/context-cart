@@ -7,6 +7,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Cart } from "./Pages/Cart";
 import { Product } from "./Pages/Product";
 import { Store } from "./Pages/Store";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

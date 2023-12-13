@@ -1,5 +1,5 @@
 import React from "react";
-import imgs from "../assets/imgs";
+import { Btn } from "./commons/Btn";
 
 export const Products = ({ products }) => {
   return (
@@ -8,10 +8,12 @@ export const Products = ({ products }) => {
         return (
           <li key={product.id}>
             <img src={product.img} alt={product.name} />
-            <h2>{product.name}</h2>
-            <h2>{product.category}</h2>
-            <h2>{product.price}</h2>
-            <h2>{product.description}</h2>
+            <div>
+              <h2>{product.name}</h2>
+            </div>
+            <div>
+              <Btn />
+            </div>
           </li>
         );
       })}
