@@ -16,6 +16,7 @@ export const Store = () => {
         </header>
         <main>
           <h1>Enrutado</h1>
+          
             <Outlet />
         </main>
     </div>

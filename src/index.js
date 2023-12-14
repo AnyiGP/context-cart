@@ -7,7 +7,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Cart } from "./Pages/Cart";
 import { Product } from "./Pages/Product";
 import { Store } from "./Pages/Store";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,10 +15,19 @@ root.render(
     <ContextFilter>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Store />}>Store</Route>
-          <Route path="/store" element={<App />}>App</Route>
-          <Route path="/cart" element={<Cart />}>Cart</Route>
-          <Route path="/product" element={<Product />}>Product</Route>
+          <Route path="/" element={<App />}>
+            App
+          </Route>
+          <Route path="/store" element={<Store />}>
+            Store
+          </Route>
+          <Route path="/cart" element={<Cart />}>
+            Cart
+          </Route>
+          <Route path="/product" element={<Product />}>
+            Product
+          </Route>
+          <Route path="*" element={<div>Error 404 - not found</div>}></Route>
         </Routes>
       </BrowserRouter>
     </ContextFilter>
