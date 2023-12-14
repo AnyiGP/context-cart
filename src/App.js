@@ -31,7 +31,7 @@ const filteredProduct = filterProducts(products)
       <header className="App-header">
         {/* <Products products={products}/> */}
         {/* <Header /> */}
-        <Layout />
+        {/* <Layout /> */}
         <Card products={filteredProduct}/>
 
       </header>

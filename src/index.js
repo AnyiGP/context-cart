@@ -17,7 +17,7 @@ root.render(
     <ContextFilter>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<NavBar />}>
+          <Route path="/" element={<Layout />}>
             <Route index element={<App />}/>
              <Route path="store" element={<Store />}/>
               

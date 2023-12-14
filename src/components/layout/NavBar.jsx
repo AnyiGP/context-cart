@@ -39,9 +39,9 @@ export const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <section>
+      {/* <section>
         <Outlet />
-      </section>
+      </section> */}
 
       {/* <nav>
         <Link to="/store">Store</Link>
