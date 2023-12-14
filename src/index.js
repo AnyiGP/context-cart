@@ -8,6 +8,8 @@ import { Cart } from "./Pages/Cart";
 import { Product } from "./Pages/Product";
 import { Store } from "./Pages/Store";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Layout } from "./components/layout/Layout";
+import { NavBar } from "./components/layout/NavBar";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,19 +17,16 @@ root.render(
     <ContextFilter>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<App />}>
-            App
+          <Route path="/" element={<NavBar />}>
+            <Route index element={<App />}/>
+             <Route path="store" element={<Store />}/>
+              
+            <Route path="cart" element={<Cart />}/>
+              
+            <Route path="product" element={<Product />}/>
+              
+            <Route path="*" element={<div>Error 404 - not found</div>}></Route>
           </Route>
-          <Route path="/store" element={<Store />}>
-            Store
-          </Route>
-          <Route path="/cart" element={<Cart />}>
-            Cart
-          </Route>
-          <Route path="/product" element={<Product />}>
-            Product
-          </Route>
-          <Route path="*" element={<div>Error 404 - not found</div>}></Route>
         </Routes>
       </BrowserRouter>
     </ContextFilter>

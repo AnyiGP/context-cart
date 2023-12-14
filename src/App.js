@@ -26,6 +26,7 @@ const filterProducts = (products) => {
 const filteredProduct = filterProducts(products)
 
   return (
+    <>
     <div className="App">
       <header className="App-header">
         {/* <Products products={products}/> */}
@@ -35,6 +36,7 @@ const filteredProduct = filterProducts(products)
 
       </header>
     </div>
+    </>
   );
 }
 

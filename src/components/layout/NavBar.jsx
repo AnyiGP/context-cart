@@ -5,7 +5,7 @@ import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 export const NavBar = () => {
   return (
@@ -39,6 +39,9 @@ export const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <section>
+        <Outlet />
+      </section>
 
       {/* <nav>
         <Link to="/store">Store</Link>
