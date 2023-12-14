@@ -9,7 +9,7 @@ import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <div>
+    <>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
           <Navbar.Brand href="#">React Catalog</Navbar.Brand>
@@ -51,6 +51,6 @@ export const NavBar = () => {
         <Link to="/cart">Cart</Link>
         <Link to="/product">Product</Link>
       </nav> */}
-    </div>
+    </>
   );
 };
