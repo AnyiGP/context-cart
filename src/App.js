@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import { products } from './Data/data';
-import { Products } from './components/Products';
+import { Card } from './components/Card';
 import { Header } from './components/layout/Header';
 import { useContext } from 'react';
 import { FilterContext } from './FContext/ContextFilter';
@@ -31,7 +31,7 @@ const filteredProduct = filterProducts(products)
         {/* <Products products={products}/> */}
         {/* <Header /> */}
         <Layout />
-        <Products products={filteredProduct}/>
+        <Card products={filteredProduct}/>
 
       </header>
     </div>

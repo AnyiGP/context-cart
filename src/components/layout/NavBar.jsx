@@ -12,7 +12,6 @@ export const NavBar = () => {
     <>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
-          <Navbar.Brand href="#">React Catalog</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
@@ -20,18 +19,13 @@ export const NavBar = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              <NavLink to="/store">Store</NavLink>
-              <NavLink to="/cart">Cart</NavLink>
-              <NavDropdown title="Category" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Todas</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link>
+                <NavLink to="/store">Store</NavLink>
+              </Nav.Link>
+
+              <Nav.Link>
+                <NavLink to="/cart">Cart</NavLink>
+              </Nav.Link>
             </Nav>
             <Form className="d-flex">
               <Form.Control

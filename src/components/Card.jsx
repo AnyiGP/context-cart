@@ -1,7 +1,7 @@
 import React from "react";
 import { Btn } from "./commons/Btn";
 
-export const Products = ({ products }) => {
+export const Card = ({ products }) => {
   return (
     <ul>
       {products.map((product) => {

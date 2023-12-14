@@ -1,7 +1,13 @@
 import React from 'react'
+import { Filters } from '../Filters'
 
 export const Aside = () => {
   return (
-    <div>Aside</div>
+    <>
+    <div>
+      Filters aside
+    <Filters />
+    </div>
+    </>
   )
 }
