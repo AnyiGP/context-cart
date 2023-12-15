@@ -1,41 +1,33 @@
-import { useState } from 'react';
-import './App.css';
-import { products } from './Data/data';
-import { Card } from './components/Card';
-import { Header } from './components/layout/Header';
-import { useContext } from 'react';
-import { FilterContext } from './FContext/ContextFilter';
-import { Layout } from './components/layout/Layout';
+import { useState } from "react";
+import "./App.css";
+import { products } from "./Data/data";
+import { Card } from "./components/Card";
+import { Header } from "./components/layout/Header";
+import { useContext } from "react";
+import { FilterContext } from "./FContext/ContextFilter";
+import { Layout } from "./components/layout/Layout";
 
 function App() {
+  const { filters } = useContext(FilterContext);
 
-  const {filters} = useContext(FilterContext)
+  const filterProducts = (products) => {
+    return products.filter((product) => {
+      return (
+        product.price >= filters.minPrice &&
+        (filters.category === "all" || product.category === filters.category)
+      ); //devuelve true para los productos que pasen las condiciones
+    });
+  };
 
-const filterProducts = (products) => {
-  return products.filter(product => {
-    return(
-      product.price >= filters.minPrice &&
-      (
-        filters.category === "all" || 
-        product.category === filters.category
-      )
-    ) //devuelve true para los productos que pasen las condiciones
-  }) 
-}
-
-const filteredProduct = filterProducts(products)
+  const filteredProduct = filterProducts(products);
 
   return (
     <>
-    <div className="App">
-      <header className="App-header">
-        {/* <Products products={products}/> */}
-        {/* <Header /> */}
-        {/* <Layout /> */}
-        <Card products={filteredProduct}/>
-
-      </header>
-    </div>
+      <div className="App">
+        <header className="App-header">
+          <Card products={filteredProduct} />
+        </header>
+      </div>
     </>
   );
 }

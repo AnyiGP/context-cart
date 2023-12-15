@@ -1,10 +1,14 @@
 import React, { useContext, useState } from "react";
 import { FilterContext } from "../FContext/ContextFilter";
+import { Button, Form } from "react-bootstrap";
+import { useSearchParams } from "react-router-dom";
 
 export const Filters = () => {
+ 
   const { setFilters } = useContext(FilterContext);
   // ojo,
   const [minPrice, setMinPrice] = useState();
+  
 
   const handleMinPrice = (e) => {
     setMinPrice(e.target.value);
@@ -17,9 +21,11 @@ export const Filters = () => {
   };
 
   //filtrar categorias disponibles e imrpimirlas en un select
+ 
 
   return (
     <>
+      
       <div>
         <label htmlFor="price">Precio</label>
         <input
@@ -41,8 +47,12 @@ export const Filters = () => {
           <option value="Pinturas y complementos">
             Pinturas y complementos
           </option>
-          <option value="Complemeno para obras Húmedas">Complemeno para obras Húmedas</option>
-          <option value="Cubiertas y aislaciones">Cubiertas y aislaciones</option>
+          <option value="Complemeno para obras Húmedas">
+            Complemeno para obras Húmedas
+          </option>
+          <option value="Cubiertas y aislaciones">
+            Cubiertas y aislaciones
+          </option>
         </select>
       </div>
     </>
