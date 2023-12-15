@@ -47,8 +47,8 @@ export const Filters = () => {
           <option value="Pinturas y complementos">
             Pinturas y complementos
           </option>
-          <option value="Complemeno para obras Húmedas">
-            Complemeno para obras Húmedas
+          <option value="Complemento para obras Húmedas">
+            Complemento para obras Húmedas
           </option>
           <option value="Cubiertas y aislaciones">
             Cubiertas y aislaciones
