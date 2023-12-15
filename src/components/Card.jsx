@@ -3,6 +3,7 @@ import { Btn } from "./commons/Btn";
 import { Link, useSearchParams } from "react-router-dom";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import "./card.css";
+import "./filters.css"
 import { Filters } from "./Filters";
 
 export const Card = ({ products }) => {
@@ -14,7 +15,7 @@ export const Card = ({ products }) => {
   };
   return (
     <>
-     
+      <Container>
         <Row>
           <Col md={3}>
             <Form className="d-flex">
@@ -23,14 +24,13 @@ export const Card = ({ products }) => {
                 onChange={handleSearchFilter}
                 type="text"
                 placeholder="search-filter"
-                className="me-2"
+                className="me-2 myFilters"
                 aria-label="search-filter"
               />
             </Form>
             <Filters />
           </Col>
-          <Col md={1}></Col>
-          <Col md={8}>
+          <Col md={9}>
             <ul className="cards">
               {products
                 .filter((product) => {
@@ -44,7 +44,7 @@ export const Card = ({ products }) => {
                     <li key={product.id} className="card">
                       <img src={product.img} alt={product.name} />
                       <div>
-                        <h2>{product.name}</h2>
+                        <h4>{product.name}</h4>
                       </div>
                       <div>
                         <Link to={"/product/" + product.id.toString()}>
@@ -57,6 +57,7 @@ export const Card = ({ products }) => {
             </ul>
           </Col>
         </Row>
+      </Container>
     </>
   );
 };
