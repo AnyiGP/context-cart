@@ -24,9 +24,9 @@ function App() {
   return (
     <>
       <div className="App">
-        <header className="App-header">
+        
           <Card products={filteredProduct} />
-        </header>
+        
       </div>
     </>
   );

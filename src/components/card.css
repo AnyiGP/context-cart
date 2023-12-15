@@ -1,0 +1,27 @@
+.card {
+    width: 200px;
+    border: 2px solid;
+    border-radius:  10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    gap: 18px;
+    margin: 24px;
+  }
