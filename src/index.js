@@ -18,13 +18,11 @@ root.render(
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<App />}/>
-             <Route path="store" element={<Store />}/>
-              
-            <Route path="cart" element={<Cart />}/>
-              
-            <Route path="product" element={<Product />}/>
-              
+            <Route index element={<App />} />
+            <Route path="store" element={<Store />} />
+            <Route path="cart" element={<Cart />} />
+            <Route path="product" element={<Product />} />
+            <Route path="product/:productId" element={<Product />} />
             <Route path="*" element={<div>Error 404 - not found</div>}></Route>
           </Route>
         </Routes>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Btn } from "./commons/Btn";
+import { Link } from "react-router-dom";
 
 export const Card = ({ products }) => {
   return (
@@ -12,7 +13,9 @@ export const Card = ({ products }) => {
               <h2>{product.name}</h2>
             </div>
             <div>
-              <Btn />
+              <Link to={"/product/" + product.id.toString()}>
+                <Btn />
+              </Link>
             </div>
           </li>
         );

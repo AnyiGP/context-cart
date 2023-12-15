@@ -233,3 +233,15 @@ export const products = [
 ];
 
 console.log(products);
+
+export function getAllProducts() {
+  return products
+}
+
+export function getProduct(id) {
+  return products.find((product) => product.id === id)
+}
+
+export function deleteProduct(id) {
+  products = products.find((product) => product.id !== id)
+}
